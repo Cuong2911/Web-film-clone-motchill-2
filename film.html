@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title 
+        title="Danh sách phim mới 2022" >
+            Danh sách phim mới 2022
+        </title>
+
+        <!-- link font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- reset css -->
+        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/modal.css">
+        <link rel="stylesheet" href="./assets/css/film.css">
+    </head>
+    <body>
+        <!-- page -->
+        <div id="page">
+            <!-- header page -->
+            <header id="header">
+                <nav class="grid wide nav-top">
+                    <div class="row">
+                        <div class="l-2">
+                            <a id="nav-logo" href="index.html">
+                                <img src="./assets/images/logo/logo3.png" alt="Logo" id="nav-logo-img">
+                                <img src="./assets/images/logo/logo-font-1.png" alt="" id="logo-font">
+                            </a>
+                        </div>
+                        <div class="l-6 l-o-0_5">
+                            <div id="nav-search">
+                                <div class="nav-search-input">
+                                    <input type="text" placeholder="V.d: tên phim, tên diễn viên...">
+                                    <button class="search-btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <div id="search-result">
+                                        <ul class="search-result-list">
+                                            <li class="search-result-item">
+                                                Kết quả tìm kiếm cho từ khoá:
+                                                <span class="search-result-item__key">""</span>
+                                            </li>
+                                            <li class="search-result-item">
+                                                Phim
+                                            </li>
+                                            <div class="film-result-item__js">
+                                            </div>
+                                            <li class="search-result-item search-result-last__js">
+                                                <a href="./film.html">Tìm tất cả kết quả từ khoá</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span>Công cụ tìm kiếm phim.</span>
+                            </div>
+                        </div>
+                        <div class="l-3 l-o-0_5">
+                            <ul id="nav-user">
+                                <div class="user-wrap1 df">
+                                    <li class="nav-user-item">
+                                        <a class="nav-login">
+                                            <i class="fa-solid fa-right-to-bracket"></i>
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li class="nav-user-item">
+                                        <a class="nav-signin">
+                                            <i class="fa-solid fa-user-astronaut"></i>
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="user-wrap2">
+                                    
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="nav-bot">
+                    <div class="grid wide">
+                        <div id="nav-menu">
+                            <ul class="menu-list">
+                                <li clas="menu-item">
+                                    <a href="./index.html" class="menu-item-link menu-item__active">
+                                        <span>
+                                            TRANG CHỦ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li clas="menu-item">
+                                    <div class="menu-item-link">
+                                        <span>
+                                            THỂ LOẠI
+                                        </span>
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Cổ Trang - Thần Thoại
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Võ Thuật - Kiếm Hiệp
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Phiêu Lưu - Hành Động
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Tâm Lý - Tình Cảm
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Hoạt Hình
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Khoa Học - Viễn Tưởng
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Hình Sự - Chiến Tranh
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Tài Liệu - Khám Phá
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Văn Hóa - Tâm Linh
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Hài Hước
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Thể Thao - Âm Nhạc
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Kinh Dị - Ma
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Gia Đình - Học Đường
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    TV Show
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Phim Chiếu Rạp
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Bí Ẩn - Siêu Nhiên
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Thuyết Minh
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Lồng Tiếng
+                                                </a>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </li>
+                                <li clas="menu-item">
+                                    <div class="menu-item-link">
+                                        <span>
+                                            QUỐC GIA
+                                        </span>
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Việt Nam
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Trung Quốc
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Hàn Quốc
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Thái Lan
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Hồng Kông
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Âu - Mỹ
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Đài Loan
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Nhật Bản
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Ấn Độ
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Canada
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="./film.html" class="sub-menu-link">
+                                                    Quốc gia khác
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li clas="menu-item">
+                                    <a href="./fiml.html" class="menu-item-link">
+                                        <span>
+                                            PHIM MỚI
+                                        </span>
+                                    </a>
+                                </li>
+                                <li clas="menu-item">
+                                    <a href="./fiml.html" class="menu-item-link">
+                                        <span>
+                                            PHIM BỘ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li clas="menu-item">
+                                    <a href="./fiml.html" class="menu-item-link">
+                                        <span>
+                                            PHIM LẺ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li clas="menu-item">
+                                    <a href="./fiml.html" class="menu-item-link">
+                                        <span>
+                                            PHIM THUYẾT MINH
+                                        </span>
+                                    </a>
+                                </li>
+                                <li clas="menu-item">
+                                    <a href="./fiml.html" class="menu-item-link">
+                                        <span>
+                                            PHIM CHIẾU RẠP
+                                        </span>
+                                    </a>
+                                </li>
+                                <li clas="menu-item">
+                                    <a href="./fiml.html" class="menu-item-link">
+                                        <span>
+                                            TV SHOW
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </header>
+
+            <!-- content page-->
+            <section id="content">
+                <!-- site map -->
+                <div class="grid wide site-map">
+                    <ul class="site-map-list">
+                        <li class="site-map-item">
+                            <a href="index.html">
+                                <span>trang chủ /</span>
+                            </a>
+                        </li>
+                        <li class="site-map-item">
+                            <h1>
+                                <span>Danh sách phim mới 2022</span>
+                            </h1>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- content main -->
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="l-8" style="color: #fff;">
+                            <!-- filter film -->
+                            <form class="form-filter">
+                                <!-- filter order -->
+                                <div class="form-filter-item">
+                                    <select class="form-filter-select" name="order" id="order">
+                                        <option value="">-- Sắp xếp --</option>
+                                        <option value="publish_date">Ngày đăng phim</option>
+                                        <option value="publish_year">Năm sản xuất</option>
+                                        <option value="name">Tên phim</option>
+                                        <option value="view">Lượt xem</option>
+                                </select>
+                                </div>
+                                <!-- filter genre -->
+                                <div class="form-filter-item">
+                                    <select class="form-filter-select" name="genre" id="genre">
+                                        <option value="">-- Thể Loại --</option>
+                                        <option value="1">Cổ Trang - Thần Thoại</option>
+                                        <option value="2">Võ Thuật - Kiếm Hiệp</option>
+                                        <option value="3">Phiêu Lưu - Hành Động</option>
+                                        <option value="4">Tâm Lý - Tình Cảm</option>
+                                        <option value="5">Hoạt Hình</option>
+                                        <option value="6">Khoa Học - Viễn Tưởng</option>
+                                        <option value="7">Hình Sự - Chiến Tranh</option>
+                                        <option value="8">Tài Liệu - Khám Phá</option>
+                                        <option value="9">Văn Hóa - Tâm Linh</option>
+                                        <option value="10">Hài Hước</option>
+                                        <option value="11">Thể Thao - Âm Nhạc</option>
+                                        <option value="12">Kinh Dị - Ma</option>
+                                        <option value="13">Gia Đình - Học Đường</option>
+                                        <option value="14">TV Show</option>
+                                        <option value="15">Phim Chiếu Rạp</option>
+                                        <option value="16">Sitcom</option>
+                                        <option value="17">Thuyết Minh</option>
+                                        <option value="18">Lồng Tiếng</option>
+                                </select>
+                                </div>
+                                <!-- filter country -->
+                                <div class="form-filter-item">
+                                    <select class="form-filter-select" name="country" id="country">
+                                        <option value="">-- Quốc gia --</option>
+                                        <option value="1">Việt Nam</option>
+                                        <option value="2">Trung Quốc</option>
+                                        <option value="3">Hàn Quốc</option>
+                                        <option value="4">Thái Lan</option>
+                                        <option value="5">Hồng Kông</option>
+                                        <option value="6">Âu - Mỹ</option>
+                                        <option value="7">Đài Loan</option>
+                                        <option value="8">Nhật Bản</option>
+                                        <option value="9">Ấn Độ</option>
+                                        <option value="10">Canada</option>
+                                        <option value="11">Khác</option>
+                                    </select>
+                                </div>
+                                <!-- filter year -->
+                                <div class="form-filter-item">
+                                    <select class="form-filter-select" name="year" id="year">
+                                        <option value="">-- Năm --</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                    </select>
+                                </div>
+                                <!-- input submit -->
+                                <input type="submit" value="Lọc phim">
+                            </form>
+
+                            <!-- list film -->
+                            <div class="grid wide film__tab-item db">
+                                <div class="row">
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 4 Vietsub</span>
+                                        <a href="#" class="film-link" title="Gia Đình Điệp Viên 2022">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/1.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Gia Đình Điệp Viên 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 20 Vietsub</span>
+                                        <a href="#" class="film-link" title="Tuyết Ưng Lĩnh Chủ (Phần 3) 2021">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/2.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Tuyết Ưng Lĩnh Chủ (Phần 3) 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 4 Vietsub</span>
+                                        <a href="#" class="film-link" title="Sắc Đẹp Giả Dối 2022">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/3.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Sắc Đẹp Giả Dối 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 3 Vietsub</span>
+                                        <a href="#" class="film-link" title="Quân Hữu Vân 2022">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/4.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Quân Hữu Vân 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 8 Vietsub</span>
+                                        <a href="#" class="film-link" title="Võ Ánh 3000 Đạo 2022">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/5.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Võ Ánh 3000 Đạo 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 2 Vietsub</span>
+                                        <a href="#" class="film-link" title="Vũ Động Càn Khôn 3 2022">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/6.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">hoatVũ Động Càn Khôn 3 2022hinh</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 27 Vietsub</span>
+                                        <a href="#" class="film-link" title="Phàm Nhân Tu Tiên (Phần 2) 2021">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/7.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Phàm Nhân Tu Tiên (Phần 2) 2021</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">HD Vietsub</span>
+                                        <a href="#" class="film-link" title="Siêu Sát Thủ Và Rồng 2020">
+                                            <img class="film-img" src="./assets/images/film_list_hoat_hinh/8.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Siêu Sát Thủ Và Rồng 2020</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Full 12/12 Vietsub+TM</span>
+                                        <a href="#" class="film-link" title="Hẹn Hò Chốn Công Sở 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/1.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Hẹn Hò Chốn Công Sở 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Full 32/32 Vietsub</span>
+                                        <a href="#" class="film-link" title="Dư Sinh Xin Chỉ Giáo Nhiều Hơn 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/2.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Dư Sinh Xin Chỉ Giáo Nhiều Hơn 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 24 Vietsub</span>
+                                        <a href="#" class="film-link" title="Thả Thí Thiên Hạ 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/3.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Thả Thí Thiên Hạ 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Full 40/40 Vietsub</span>
+                                        <a href="#" class="film-link" title="Xin Chào Tay Súng Thần 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/4.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Xin Chào Tay Súng Thần 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Full 22/22 Vietsub</span>
+                                        <a href="#" class="film-link" title="Ngự Giao Ký: Dữ Quân Sơ Tương Thức 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/5.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Ngự Giao Ký: Dữ Quân Sơ Tương Thức 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Full 12/12 Vietsub+TM</span>
+                                        <a href="#" class="film-link" title="Ngôi Trường Xác Sống 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/6.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Ngôi Trường Xác Sống 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Full 43/43 Vietsub</span>
+                                        <a href="#" class="film-link" title="Kính Song Thành 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/7.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Kính Song Thành 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Full 28/28 Vietsub</span>
+                                        <a href="#" class="film-link" title="Saree Yêu Dấu 2022">
+                                            <img class="film-img" src="./assets/images/film_list_yeu_thich/8.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Saree Yêu Dấu 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 5 Vietsub</span>
+                                        <a href="#" class="film-link" title="Bẫy Giam Cầm Tình Yêu">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_1.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Bẫy Giam Cầm Tình Yêu</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 22 Vietsub</span>
+                                        <a href="#" class="film-link" title="Lời Nguyền Ma Lai 2022">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_2.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Lời Nguyền Ma Lai 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 32 Vietsub</span>
+                                        <a href="#" class="film-link" title="Lam Diễm Đột Kích 2022">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_3.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Lam Diễm Đột Kích 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 4 Vietsub</span>
+                                        <a href="#" class="film-link" title="Gia Đình Điệp Viên 2022">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_4.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Gia Đình Điệp Viên 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 7 Vietsub</span>
+                                        <a href="#" class="film-link" title="Cảnh Đẹp Ngày Vui Biết Bao Giờ 2022">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_5.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Cảnh Đẹp Ngày Vui Biết Bao Giờ 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 8 Vietsub</span>
+                                        <a href="#" class="film-link" title="Hãy Gọi Tôi Là Tổng Giám 2022">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_6.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Hãy Gọi Tôi Là Tổng Giám 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 10 Vietsub</span>
+                                        <a href="#" class="film-link" title="Một Vạn Lần Cứu Anh 2022">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_7.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Một Vạn Lần Cứu Anh 2022</span>
+                                        </a>
+                                    </div>
+                                    <div class="l-3 film-item film-item__tab">
+                                        <span class="label">Tập 24 Vietsub</span>
+                                        <a href="#" class="film-link" title="Thả Thí Thiên Hạ 2022">
+                                            <img class="film-img" src="./assets/images/film_list_tab/1_8.jpg" alt="phim">
+                                            <i class="fa-solid fa-circle-play film-icon-play"></i>
+                                            <span class="film-name">Thả Thí Thiên Hạ 2022</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- panigation -->
+                            <div class="pagination">
+                                <ul>
+                                    <li>
+                                        <a href="./film.html" class="current">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./film.html">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./film.html">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./film.html">
+                                            4
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./film.html">
+                                            5
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span>…</span>
+                                    </li>
+                                    <li>
+                                        <a href="./film.html">
+                                            37
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./film.html" id="pagination-next" rel="next">
+                                            Sau
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="l-4 page-right" style="color: #fff;">
+                            <!-- phim sap chieu -->
+                            <div class="title-box title-box-right">
+                                Phim Sắp Chiếu
+                            </div>
+                            <ul class="film-list-right">
+                                <li class="film-item-right">
+                                    <a href="#" class="film-link-img">
+                                        <img src="./assets/images/film_list_sap_chieu/1.jpg" alt="phim" class="film-img-right">
+                                    </a>
+                                    <div class="film-desc-right">
+                                        <a href="#"class="film-name-right">Chỉ Là Quan Hệ Hôn Thê</a>
+                                        <h4 class="film-year">2022</h4>
+                                        <div class="film-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="film-item-right">
+                                    <a href="#" class="film-link-img">
+                                        <img src="./assets/images/film_list_sap_chieu/2.jpg" alt="phim" class="film-img-right">
+                                    </a>
+                                    <div class="film-desc-right">
+                                        <a href="#"class="film-name-right">Dây Dầu Gai</a>
+                                        <h4 class="film-year">2022</h4>
+                                        <div class="film-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="film-item-right">
+                                    <a href="#" class="film-link-img">
+                                        <img src="./assets/images/film_list_sap_chieu/3.jpg" alt="phim" class="film-img-right">
+                                    </a>
+                                    <div class="film-desc-right">
+                                        <a href="#"class="film-name-right">Tân Thần Điêu Đại Hiệp</a>
+                                        <h4 class="film-year">2019</h4>
+                                        <div class="film-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="film-item-right">
+                                    <a href="#" class="film-link-img">
+                                        <img src="./assets/images/film_list_sap_chieu/4.jpg" alt="phim" class="film-img-right">
+                                    </a>
+                                    <div class="film-desc-right">
+                                        <a href="#"class="film-name-right">Tôi Yêu Một Miêu Nhân</a>
+                                        <h4 class="film-year">2021</h4>
+                                        <div class="film-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="film-item-right">
+                                    <a href="#" class="film-link-img">
+                                        <img src="./assets/images/film_list_sap_chieu/5.jpg" alt="phim" class="film-img-right">
+                                    </a>
+                                    <div class="film-desc-right">
+                                        <a href="#"class="film-name-right">Triều Ca</a>
+                                        <h4 class="film-year">2019</h4>
+                                        <div class="film-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Trending -->
+                            <div class="title-box title-box-right">
+                                Trending
+                            </div>
+                            <!-- Từ Khóa Nổi Bật -->
+                            <div class="title-box title-box-right">
+                                Từ Khóa Nổi Bật
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer page -->
+            <footer id="footer">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="l-8 footer-left">
+                            <strong>Xem phim online</strong>
+                            miễn phí chất lượng cao với phụ đề tiếng việt - thuyết minh - lồng tiếng. Mọt phim có nhiều thể loại phim phong phú, đặc sắc, nhiều bộ phim hay nhất - mới nhất.
+                            <br/>
+                            Website motphim.net với giao diện trực quan, thuận tiện, tốc độ tải nhanh, thường xuyên cập nhật các bộ phim mới hứa hẹn sẽ đem lại những trải nghiệm tốt cho người dùng.
+                        </div>
+                        <div class="l-3 l-o-1 footer-right">
+                            <div class="footer-right-col">
+                                <span>Quy định</span>
+                                <h1>Điều khoản chung</h1>
+                                <h1>Chính sách riêng tư</h1>
+                            </div>
+                            <div class="footer-right-col">
+                                <span>Giới thiệu</span>
+                                <h1>Trang chủ</h1>
+                                <h1>Facebook</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- modal -->
+        <div id="modal">
+            <div class="modal-overlay">
+
+            </div>
+
+            <!-- modal content -->
+            <div class="modal-content">content</div>
+        </div>
+
+        <!-- script -->
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/search.js"></script>
+        <script src="./assets/js/login.js"></script>
+    </body>
+</html>

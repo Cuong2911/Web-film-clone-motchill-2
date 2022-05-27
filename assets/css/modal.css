@@ -1,0 +1,108 @@
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: none;
+}
+.df {
+    display: flex !important;
+}
+.modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333ad;
+}
+.modal-content {
+    position: relative;
+    width: 325px;
+    margin: auto;
+    z-index: 101;
+    animation: topToCenter ease 0.3s;
+}
+@keyframes topToCenter {
+    from {
+        top: -100%;
+        opacity: 0;
+    } to {
+        top: 0;
+        opacity: 1;
+    }
+}
+.modal-main {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 2px;
+}
+.modal-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px;
+    color: #636363;
+    border-bottom: 1px dashed #8a8a8aad;
+}
+.modal-body {
+    display: flex;
+    flex-direction: column; 
+    padding: 24px 14px;
+    border-bottom: 1px dashed #8a8a8aad;
+}
+.form-input-wrap {
+    display: flex;
+    margin-bottom: 12px;
+    padding: 0 18px;
+    align-items: center;
+}
+.form-icon {
+    margin-right: 4px;
+    font-size: 20px;
+}
+.form-input {
+    flex: 1;
+    font-size: 14px;
+    padding: 4px 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.form-input:focus {
+    box-shadow: 0px 0px 8px var(--primary-color0);
+}
+.form-input:focus ~ i {
+    color: var(--primary-color0) !important;
+    opacity: 0.8;
+}
+.form-btn {
+    width: 84px;
+    padding: 6px;
+    align-self: center;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-btn:hover {
+    background-color: var(--primary-color0);
+    opacity: 0.6;
+}
+.modal-footer {
+    text-align: center;
+    padding: 8px;
+}
+.modal-footer-link {
+    cursor: pointer;
+}
+.modal-footer-link span {
+    text-decoration: underline;
+    font-weight: 500;
+}
+.modal-footer-link:hover span {
+    color: var(--primary-color0);
+}

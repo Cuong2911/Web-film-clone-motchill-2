@@ -1,0 +1,20 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.fsz-36 {
+    font-size: 36px;
+}
+.fsz-20 {
+    font-size: 20px;
+}
+.al-center {
+    display: flex;
+    align-items: center;
+}
+:root {
+    --primary-color0: #ea7e81;
+    --primary-color1: #333333;
+    --primary-color2: #2d2d2d;
+    --primary-color3: #1f1f1f;
+    --primary-color4: #181818;
+}
